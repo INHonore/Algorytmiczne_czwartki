@@ -2,6 +2,8 @@
 using namespace std;
 
 int main(){
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
     int n;
     long long pietrox,pietroy;
     int steps;
@@ -13,8 +15,8 @@ int main(){
         cin >> x >> y;
         steps = 0;
 
-        pietrox = floor(log(x)/log(2.0));
-        pietroy = floor(log(y)/log(2.0));
+        pietrox = floor(log(x)/log(2));
+        pietroy = floor(log(y)/log(2));
 
         if (pietrox > pietroy){
             steps = pietrox - pietroy;
